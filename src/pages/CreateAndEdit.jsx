@@ -296,6 +296,26 @@ const CreateAndEdit = () => {
                   <p className="text-danger mb-0">{employeeInfo.errors.soGioLamTrongThang}</p>
                 )}
               </div>
+              <div className="col-md-6">
+                <label
+                  htmlFor="soGioLamTrongThang"
+                  className="form-label fw-semibold"
+                >
+                  Giá tiền
+                </label>
+                <div className="input-group">
+                  <input
+                    type="number"
+                    className="form-control"
+                    inputMode='numeric'
+                    placeholder="giá tiền"
+                  />
+                  <span className="input-group-text">giờ</span>
+                </div>
+                {showValidationErrors && employeeInfo.errors.soGioLamTrongThang && (
+                  <p className="text-danger mb-0">{employeeInfo.errors.soGioLamTrongThang}</p>
+                )}
+              </div>
             </div>
 
             <div className="d-flex justify-content-end gap-2 mt-4">
